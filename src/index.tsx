@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./app";
+import { App } from "./app";
 import reportWebVitals from "./reportWebVitals";
+
+
+if (process.env.NODE_ENV !== "production") {
+	const { worker } = require("./api/dev-server");
+	worker.start()
+}
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

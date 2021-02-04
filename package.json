@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+	"name": "msw-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+	},
+	"jest": {},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -90,5 +91,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+	},
+	"devDependencies": {
+		"msw": "^0.26.0"
   }
 }
